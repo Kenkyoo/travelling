@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-size-logo: 40px;
+  --cursor-pointer: pointer;
+  --padding-section: 30px;
+  --full-width: 100%;
+  --max-height: 100vh;
+  --stars-color: goldenrod;
+  --stars-hover: gold;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  transition: margin-left .5s;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hr-blurry {
+  margin: 50px auto;
+}
+
+header {
+  position: relative;
+}
+
+/* Animated navbar */
+
+.navbar-after-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Carousel style */
+
+.carousel-item img {
+  max-height: var(--max-height);
+  width: var(--full-width);
+  object-fit: cover;
+}
+
+.carousel-item video {
+  max-height: var(--max-height);
+  width: var(--full-width);
+  object-fit: cover;
+}
+/* Animated search */
+
+#filterInput {
+  max-width: 300px;
+  transition: width 0.2s ease-in-out;
+}
+
+#filterInput.animated-search {
+  max-width: 500px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#openSidebar {
+  cursor: var(--cursor-pointer);
+}
+
+/* Add class to open sidebar */
+
+.sidenav {
+    width: 50px;
+}
+
+.sidebody {
+    margin-left: 50px;
+}
+
+/* Cards Container */
+
+.card {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  cursor: var(--cursor-pointer);
+}
+
+.form-check-inline {
+  margin-right: 0;
+}
+
+/* Snackbar submit form */
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  display: none; /* Hidden by default. Visible on click */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  z-index: 1; /* Add a z-index if needed */
+  --animate-duration: 2.5s;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  display: block; /* Show the snackbar */
+}
+
+/* Testimonials */
+
+.testimonials {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/* Stars checked */
+
+.checked {
+  color: var(--stars-color);
+}
+
+/* Gallery */
+
+.gallery img {
+  height: auto;
+  width: var(--full-width);
+  border-radius: 12px;
+  cursor: var(--cursor-pointer);
+}
+
+.gallery img:hover {
+  opacity: 0.7;
+}
+
+/* App section */
+
+#btnRandom {
+  cursor: var(--cursor-pointer);
+  margin-top: 15px;
+}
+
+.fa-dice {
+  font-size: 20px;
+}
+
+/* Faq section */
+
+.accordion {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-header i {
+  font-size: 40px;
+  color: blue;
+}
+
+/* Coupon style */
+
+.coupon {
+  border: 5px dotted #111; /* Dotted border */
+  width: 80%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 300px;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 2;
+}
+
+.coupon-container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+  color: #111;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+/* User stars */
+
+.stars {
+  cursor: var(--cursor-pointer);
+}
+
+.stars:hover {
+  color: var(--stars-hover);
+}
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  column-gap: 20px;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cardContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,165 @@
+const travels = [
+    {
+        place: "Nueva York",
+        descr: "Nueva York, la ciudad que nunca duerme, es conocida por sus impresionantes rascacielos, su diversidad cultural, sus emblemáticos lugares de interés como Times Square y Central Park, y su vibrante escena artística y gastronómica.",
+        price: 130,
+        image: "images/travels/pexels-christian-catamo-12468323.jpg",
+        continent: "América del Norte",
+        type: "Ciudad"
+    },
+    {
+        place: "Londres",
+        descr: "Londres, la capital del Reino Unido, es una ciudad llena de historia y modernidad. Desde el imponente Palacio de Buckingham hasta el emblemático Big Ben, pasando por el bullicioso mercado de Camden, Londres ofrece algo para todos los gustos.",
+        price: 110,
+        image: "images/travels/pexels-pixabay-460672.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "Barcelona",
+        descr: "Barcelona, la joya de la costa española, es conocida por su arquitectura única, sus playas de arena dorada y su animada vida nocturna. Desde la Sagrada Familia hasta el Parque Güell, Barcelona cautiva a los visitantes con su encanto mediterráneo.",
+        price: 120,
+        image: "images/travels/pexels-aleksandar-pasaric-1388030.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "Bangkok",
+        descr: "Bangkok, la capital de Tailandia, es una metrópolis bulliciosa llena de templos antiguos, mercados flotantes, exquisita cocina callejera y una animada vida nocturna. Con su mezcla única de tradición y modernidad, Bangkok ofrece una experiencia inolvidable.",
+        price: 100,
+        image: "images/travels/pexels-te-lensfix-1374377.jpg",
+        continent: "Asia",
+        type: "Ciudad"
+    },
+    {
+        place: "Sídney",
+        descr: "Sídney, la ciudad más grande de Australia, es conocida por su icónica Ópera y su impresionante Puente del Puerto. Con sus hermosas playas, parques naturales y una escena cultural vibrante, Sídney es un destino imperdible para los viajeros.",
+        price: 140,
+        image: "images/travels/pexels-kate-branch-11122389.jpg",
+        continent: "Oceanía",
+        type: "Ciudad"
+    },
+    {
+        place: "Río de Janeiro",
+        descr: "Río de Janeiro, la ciudad maravillosa de Brasil, es famosa por sus espectaculares playas, su animado carnaval y su imponente estatua del Cristo Redentor. Con su estilo de vida relajado y su impresionante belleza natural, Río es un paraíso para los amantes del sol y el surf.",
+        price: 125,
+        image: "images/travels/pexels-caroline-cagnin-1959065.jpg",
+        continent: "América del Sur",
+        type: "Ciudad"
+    },
+    {
+        place: "Venecia",
+        descr: "Venecia, la ciudad de los canales, es conocida por su encantadora arquitectura renacentista, sus románticos paseos en góndola y su famoso Carnaval. Con sus calles estrechas y sus impresionantes palacios, Venecia es uno de los destinos más románticos del mundo.",
+        price: 135,
+        image: "images/travels/pexels-jan-zakelj-10294376.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "Estambul",
+        descr: "Estambul, la puerta entre Oriente y Occidente, es una ciudad llena de historia, cultura y belleza. Desde la majestuosa Mezquita Azul hasta el bullicioso Gran Bazar, Estambul ofrece una experiencia única para los visitantes.",
+        price: 115,
+        image: "images/travels/pexels-the-peassa-12478240.jpg",
+        continent: "Asia",
+        type: "Ciudad"
+    },
+    {
+        place: "Dubái",
+        descr: "Dubái, la ciudad de los récords, es conocida por sus impresionantes rascacielos, sus lujosos centros comerciales y su estilo de vida opulento. Con sus playas de arena blanca y su emocionante vida nocturna, Dubái es un destino de ensueño para muchos.",
+        price: 150,
+        image: "images/travels/pexels-aleksandar-pasaric-823696.jpg",
+        continent: "Asia",
+        type: "Ciudad"
+    },
+    {
+        place: "Praga",
+        descr: "Praga, la ciudad de las cien torres, es famosa por su arquitectura medieval, sus pintorescos callejones y su animada escena cultural. Desde el imponente Castillo de Praga hasta el encantador Puente de Carlos, Praga cautiva a los visitantes con su encanto histórico.",
+        price: 105,
+        image: "images/travels/pexels-anna-11790478.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "Kioto",
+        descr: "Kioto, la antigua capital de Japón, es conocida por sus impresionantes templos, jardines zen y tradiciones milenarias. Desde el icónico Templo Kinkaku-ji hasta el histórico barrio de Gion, Kioto ofrece una visión fascinante de la cultura japonesa.",
+        price: 130,
+        image: "images/travels/pexels-belle-co-402028.jpg",
+        continent: "Asia",
+        type: "Ciudad"
+    },
+    {
+        place: "Ámsterdam",
+        descr: "Ámsterdam, la ciudad de los canales, es famosa por su arquitectura distintiva, sus museos de clase mundial y su ambiente relajado. Desde el Museo Van Gogh hasta el Barrio Rojo, Ámsterdam ofrece una experiencia única para los visitantes.",
+        price: 115,
+        image: "images/travels/pexels-liene-ratniece-1329510.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "Hong Kong",
+        descr: "Hong Kong, la vibrante ciudad asiática, combina la modernidad con la tradición de una manera única. Desde los rascacielos futuristas hasta los templos antiguos, Hong Kong ofrece una experiencia inolvidable para los visitantes.",
+        price: 125,
+        image: "images/travels/pexels-jimmy-chan-1337144.jpg",
+        continent: "Asia",
+        type: "Ciudad"
+    },
+    {
+        place: "Berlín",
+        descr: "Berlín, la capital de Alemania, es una ciudad llena de historia, arte y cultura. Desde el icónico Muro de Berlín hasta la animada escena de clubes nocturnos, Berlín ofrece una experiencia única para los visitantes.",
+        price: 110,
+        image: "images/travels/pexels-annam-w-1057840.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "Machu Picchu",
+        descr: "Machu Picchu, la legendaria ciudad inca, es uno de los destinos arqueológicos más impresionantes del mundo. Ubicada en lo alto de los Andes peruanos, Machu Picchu ofrece vistas espectaculares y una fascinante historia antigua.",
+        price: 145,
+        image: "images/travels/pexels-chelsea-cook-2929906.jpg",
+        continent: "América del Sur",
+        type: "Histórico"
+    },
+    {
+        place: "Las Vegas",
+        descr: "Las Vegas, la ciudad del pecado, es conocida por sus extravagantes casinos, sus impresionantes espectáculos y su animada vida nocturna. Con su brillantez deslumbrante y su ambiente festivo, Las Vegas es un destino popular para aquellos que buscan diversión y emoción.",
+        price: 135,
+        image: "images/travels/pexels-david-vives-2837909.jpg",
+        continent: "América del Norte",
+        type: "Ciudad"
+    },
+    {
+        place: "Florencia",
+        descr: "Florencia, la cuna del Renacimiento, es famosa por su impresionante arquitectura, sus increíbles museos y su rica historia cultural. Desde la majestuosa Catedral de Santa María del Fiore hasta la icónica Galería Uffizi, Florencia es un tesoro artístico.",
+        price: 120,
+        image: "images/travels/pexels-maegan-white-981686.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    },
+    {
+        place: "San Francisco",
+        descr: "San Francisco, la ciudad de la bahía, es conocida por su impresionante puente Golden Gate, sus empinadas colinas y su ecléctica cultura. Con su vibrante escena artística, gastronómica y tecnológica, San Francisco atrae a visitantes de todo el mundo.",
+        price: 130,
+        image: "images/travels/pexels-tae-fuller-1141853.jpg",
+        continent: "América del Norte",
+        type: "Ciudad"
+    },
+    {
+        place: "Cairo",
+        descr: "El Cairo, la bulliciosa capital de Egipto, es conocida por sus impresionantes pirámides, su fascinante historia antigua y su animada vida callejera. Desde las majestuosas pirámides de Giza hasta el bullicioso zoco de Khan el-Khalili, El Cairo ofrece una experiencia única para los visitantes.",
+        price: 125,
+        image: "images/travels/pexels-thais-cordeiro-3873681.jpg",
+        continent: "África",
+        type: "Ciudad"
+    },
+    {
+        place: "Copenhague",
+        descr: "Copenhague, la capital de Dinamarca, es conocida por su diseño innovador, su deliciosa cocina y su estilo de vida relajado. Desde el icónico parque de atracciones Tivoli hasta la famosa escultura de la Sirenita, Copenhague ofrece una experiencia encantadora.",
+        price: 115,
+        image: "images/travels/pexels-julia-volk-5193476.jpg",
+        continent: "Europa",
+        type: "Ciudad"
+    }
+];
+
+
+

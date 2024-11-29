@@ -1,0 +1,45 @@
+const faq = [
+  
+{
+   id: 'headingOneY',
+   data-mdb: '#collapseOneY',
+   aria: 'collapseOneY',
+   question: '¿Cuáles son los métodos de pago aceptados por Travelling?',
+   answer: 'Aceptamos pagos con tarjeta de crédito/débito (Visa, Mastercard, American Express) y transferencias bancarias.'
+
+},
+
+  {
+   id: 'headingTwoY',
+   data-mdb: '#collapseTwoY',
+   aria: 'collapseTwoY',
+   question: '¿Qué medidas toma Travelling en relación con la seguridad de los viajes?',
+   answer: 'En Travelling, la seguridad de nuestros clientes es nuestra máxima prioridad. Trabajamos con proveedores de servicios confiables y seguimos estrictos estándares de seguridad en todos nuestros destinos.'
+},
+
+  {
+   id: 'headingThreeY',
+   data-mdb: '#collapseThreeY',
+   aria: 'collapseThreeY',
+   question: '¿Puedo realizar cambios en mi reserva una vez confirmada?',
+   answer: ' Sí, en la medida de lo posible, podemos ayudarte a realizar cambios en tu reserva. Sin embargo, ten en cuenta que pueden aplicarse cargos adicionales según las políticas de cancelación y cambios de cada proveedor.'
+},
+
+  {
+   id: 'headingFourY',
+   data-mdb: '#collapseFourY',
+   aria: 'collapseFourY',
+   question: '¿Ofrecen seguro de viaje para mis vacaciones con Travelling?',
+   answer: 'Sí, ofrecemos opciones de seguro de viaje para garantizar que estés cubierto en caso de imprevistos durante tu viaje. Puedes consultar con nuestro equipo para obtener más información sobre nuestras opciones de seguro.'
+},
+
+  {
+   id: 'headingFiveY',
+   data-mdb: '#collapseFiveY',
+   aria: 'collapseFiveY',
+   question: '¿Cómo puedo ponerme en contacto con el servicio al cliente de Travelling?',
+   answer: 'Puedes ponerte en contacto con nuestro equipo de servicio al cliente a través de nuestro formulario en línea en la sección de contacto de nuestro sitio web, por correo electrónico a info@travelling.com o por teléfono al +XX-XXXX-XXXX.'
+
+},
+
+];
